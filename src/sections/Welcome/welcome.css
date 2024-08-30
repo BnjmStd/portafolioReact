@@ -1,0 +1,67 @@
+.header__img {
+    border-radius: 9999px;
+    width: 3rem;
+    height: 2rem;
+}
+
+.main-heading {
+    color: white;
+    font-size: 3rem;
+    /* Equivalente a text-5xl (aproximadamente 3rem) */
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    /* Equivalente a gap-x-4 (1rem) */
+    padding-bottom: 1rem;
+    /* Equivalente a pb-4 (1rem) */
+}
+
+.badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    opacity: 0.8;
+    text-wrap: wrap;
+
+    & .description {
+        color: rgba(252, 211, 77, 0.9); 
+    }
+
+    & .location {
+        color: rgba(248, 113, 113, 0.9); 
+    }
+
+    & .learning {
+        opacity: 0.75;
+    }
+}
+
+.container__social {
+    display: flex;
+    column-gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.custom-link {
+    border-radius: 9999px; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 0.5rem; /* Equivalente a gap-x-2 (0.5rem) */
+    padding: 0.5rem 1.25rem; /* Equivalente a py-2 px-1 (0.5rem 0.25rem) */
+    text-decoration: none;
+    transition: color .5s ease-in transform .5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.05);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scale(1.1);
+    }
+}

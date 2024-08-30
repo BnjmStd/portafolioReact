@@ -1,0 +1,6 @@
+.main-section {
+    width: 100%;
+    max-width: 740px;
+    /* Equivalente a lg:w-[740px] */
+    margin: 0 auto;
+}

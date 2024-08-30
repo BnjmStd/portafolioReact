@@ -1,0 +1,83 @@
+.experience-item {
+    position: relative;
+    margin: 0 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: relative;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -35px;
+    height: 100%;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+    .experience-item::before {
+        border-left: 2px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+.experience-item__details {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.experience-item__sticky {
+    position: sticky;
+    top: 0;
+}
+
+.experience-item__bullet {
+    color: #fbbf24; /* Tailwind's text-yellow-400 */
+    position: absolute;
+    left: -42px;
+    font-size: 3rem; /* Tailwind's text-5xl */
+    border-radius: 50%;
+}
+
+.experience-item__title {
+    color: #fbbf24; /* Tailwind's text-yellow-400 */
+    font-size: 1.25rem; /* Tailwind's text-xl */
+    font-weight: bold;
+}
+
+.experience-item__company {
+    font-size: 1.25rem; /* Tailwind's text-xl */
+    font-weight: 600; /* Tailwind's font-semibold */
+    color: #4b5563; /* Tailwind's text-gray-600 */
+}
+
+@media (prefers-color-scheme: dark) {
+    .experience-item__company {
+        color: #ffffff; /* Tailwind's dark:text-white */
+    }
+}
+
+.experience-item__date {
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem; /* Tailwind's text-sm */
+    color: rgba(107, 114, 128, 0.8); /* Tailwind's text-gray-600/80 */
+}
+
+@media (prefers-color-scheme: dark) {
+    .experience-item__date {
+        color: rgba(255, 255, 255, 0.8); /* Tailwind's dark:text-white/80 */
+    }
+}
+
+.experience-item__description {
+    color: #4b5563; /* Tailwind's text-gray-600 */
+    font-size: 1rem; /* Default font size */
+}
+
+@media (prefers-color-scheme: dark) {
+    .experience-item__description {
+        color: #d1d5db; /* Tailwind's dark:text-gray-300 */
+    }
+}
