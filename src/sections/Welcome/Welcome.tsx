@@ -1,4 +1,5 @@
 import Badget from "../../components/Badget"
+import Carrusel from "../../components/Carrusel"
 import SectionContainer from "../../components/SectionContainer"
 import Github from "../../icons/Github"
 import { LinkedIn } from "../../icons/Linkedln"
@@ -16,15 +17,17 @@ export default function Welcome({
     console.log(data)
 
     return (
-        <main>
-            <SectionContainer style={{ marginTop: '11rem', marginBottom: '5rem'}}>
-            
-            <img className="header__img" src="/yo.png" alt="photo profile google" />
+        <main className={'main__container'} style={{ marginTop: '8rem', marginBottom: '3rem', marginLeft: 'auto',
+            marginRight: 'auto', }}>
+            <SectionContainer style={{ marginBottom: '3rem' }}>
+
+                <div className="badge-container">
+                    <img className="header__img" src="/yo.png" alt="photo profile google" />
+                    <Badget>Disponible para trabajar</Badget>
+                </div>
+
                 <h1 className="main-heading">
                     Hola, soy Benjamín
-                    <div className="badge-container">
-                        <Badget>Disponible para trabajar</Badget>
-                    </div>
                 </h1>
                 <h2 className="sub-heading">
                     <span className="experience">+1 año de experiencia </span>
@@ -64,6 +67,9 @@ export default function Welcome({
 
                 </nav>
             </SectionContainer>
+
+            <Carrusel />
+
         </main>
     )
 }

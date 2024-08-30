@@ -4,17 +4,18 @@
     height: 2rem;
 }
 
+.main__container {
+    max-width: 740px;
+}
+
 .main-heading {
     color: white;
     font-size: 3rem;
-    /* Equivalente a text-5xl (aproximadamente 3rem) */
     font-weight: bold;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    /* Equivalente a gap-x-4 (1rem) */
     padding-bottom: 1rem;
-    /* Equivalente a pb-4 (1rem) */
 }
 
 .badge-container {

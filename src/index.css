@@ -9,13 +9,13 @@ html {
 }
 
 :root {
-    color-scheme:  dark;
+    color-scheme: dark;
+    font-family: 'Onest Variable', sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background: #050505;
     min-height: 100vh;
 }
 
