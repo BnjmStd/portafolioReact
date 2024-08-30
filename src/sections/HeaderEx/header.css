@@ -1,0 +1,63 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+}
+
+.nave {
+    display: flex;
+    padding: 0 12px;
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    border-radius: 9999px;
+    /* rounded-full */
+    color: #4a5568;
+    /* text-gray-600 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-link {
+    position: relative;
+    /* relative */
+    display: block;
+    /* block */
+    padding: 8px;
+    /* px-2 py-2 */
+    transition: color 0.3s ease;
+    /* transition */
+
+    &:hover {
+        color: #4299e1;
+        /* hover:text-blue-500 */
+    }
+
+}
+
+.nav-link.active {
+    color: #4299e1;
+}
+
+#landing-header {
+    animation: nav-shadown 2s linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+}
+
+@keyframes nav-shadow {
+    to {
+        background: rgba(142, 111, 111, 0.244);
+        backdrop-filter: blur(10px);
+        color: black;
+    }
+}

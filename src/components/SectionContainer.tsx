@@ -1,4 +1,3 @@
-
 import "./sectionContainer.css"
 
 export default function SectionContainer({

@@ -1,5 +1,7 @@
 import ExperienceItem from "../../components/ExperienceItem"
 
+import "./experience.css"
+
 const EXPERIENCE = [
     {
         date: "2024",
@@ -20,7 +22,7 @@ const EXPERIENCE = [
 
 export default function Experience() {
     return (
-        <ol className="relative mt-16">
+        <ol className="olist">
             {
                 EXPERIENCE.map((experience) => (
                     <li className="">

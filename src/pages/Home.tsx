@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react"
 import cvUrl from "/cv.json?url";
 import { RootObject } from "../types"
-
-import Header from "../sections/Header/Header";
+import Headerx from "../sections/HeaderEx/Header";
 import Welcome from "../sections/Welcome/Welcome";
 import Experience from "../sections/Experience/Experience";
 import SectionContainer from "../components/SectionContainer";
@@ -21,13 +20,20 @@ export default function Home() {
 
     return (
         <>
-            <Header />
+            <Headerx />
             <Welcome data={data} />
 
-            <SectionContainer id="experience">
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1.5rem', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                    Experiencia Laboral
+            <SectionContainer id="experiencia">
+                <h2 style={{ 
+                        fontSize: '1.5rem', 
+                        fontWeight: 600, 
+                        marginBottom: '1.5rem', 
+                        display: 'flex', 
+                        gap: '0.5rem', 
+                        alignItems: 'center' 
+                    }}>
                     <BriefCase />
+                    Experiencia Laboral
                 </h2>
 
                 <Experience />

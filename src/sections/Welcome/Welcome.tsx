@@ -4,7 +4,9 @@ import Github from "../../icons/Github"
 import { LinkedIn } from "../../icons/Linkedln"
 import Mail from "../../icons/Mail"
 import { RootObject } from "../../types"
+
 import "./welcome.css"
+
 export default function Welcome({
     data
 }: {
@@ -15,7 +17,7 @@ export default function Welcome({
 
     return (
         <main>
-            <SectionContainer style={{ marginTop: '8rem', marginBottom: '5rem'}}>
+            <SectionContainer style={{ marginTop: '11rem', marginBottom: '5rem'}}>
             
             <img className="header__img" src="/yo.png" alt="photo profile google" />
                 <h1 className="main-heading">
@@ -55,9 +57,9 @@ export default function Welcome({
                     <a className="custom-link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="">
+                        href="mailto:benja_e_e@hotmail.com">
                         <Mail />
-                        Benja_e_e@hotmail.com
+                        Mail
                     </a>
 
                 </nav>
