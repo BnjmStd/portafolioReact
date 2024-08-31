@@ -1,8 +1,13 @@
+import BashIcon from '../icons/BashIcon';
+import CIcon from '../icons/CIcon';
 import Css from '../icons/Css';
 import HtmlIcon from '../icons/HtmlIcon';
+import JavaScriptIcon from '../icons/JavaScriptIcon';
 import NextjsIcon from '../icons/NextjsIcon';
+import PythonIcon from '../icons/PythonIcon';
 import ReactIcon from '../icons/React';
 import TypeScript from '../icons/TypeScript';
+import UbuntuIcon from '../icons/UbuntuIcon';
 import './carrusel.css';
 
 export default function Carrusel() {
@@ -56,7 +61,42 @@ export default function Carrusel() {
                     className="item"
                     style={{ '--position': `5` } as React.CSSProperties}
                 >
-                    <Css />
+                    <NextjsIcon />
+                </div>
+
+                <div
+                    className='item'
+                    style={{ '--position': `6` } as React.CSSProperties}
+                >
+                    <UbuntuIcon />
+                </div>
+
+                <div
+                    className='item'
+                    style={{ '--position': `7` } as React.CSSProperties}
+                >
+                    <JavaScriptIcon />
+                </div>
+
+                <div
+                    className='item'
+                    style={{ '--position': `8` } as React.CSSProperties}
+                >
+                    <CIcon />
+                </div>
+
+                <div
+                    className='item'
+                    style={{ '--position': `9` } as React.CSSProperties}
+                >
+                    <BashIcon />
+                </div>
+
+                <div
+                    className='item'
+                    style={{ '--position': `10` } as React.CSSProperties}
+                >
+                    <PythonIcon />
                 </div>
 
             </div>
