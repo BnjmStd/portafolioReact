@@ -1,8 +1,7 @@
 .container__toggle {
     position: fixed;
-    bottom: 20px;
+    top: 20px;
     right: 50px;
-
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -10,7 +9,7 @@
     justify-content: center;
 
     & label {
-        width: 120px;
+        width: 70px;
         height: 50px;
         position: relative;
         display: block;
@@ -48,7 +47,7 @@
         }
 
         &:checked+label::before {
-            left: 110px;
+            left: 60px;
             transform: translateX(-100%);
             background: linear-gradient(180deg, #777, #3a3a3a);
             border: 2px solid rgb(96, 96, 96);

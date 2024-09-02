@@ -8,7 +8,7 @@ import Footer from "../sections/Footer/Footer";
 
 import { lazy, Suspense } from "react";
 import Robot from "../icons/Robot";
-import ToggleDarkMode from "../components/ToggleDarkMode";
+// import ToggleDarkMode from "../components/ToggleDarkMode";
 
 const CarruselLow =  lazy(() => import("../components/Carrusel"))
 
@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <>
 
-            <ToggleDarkMode />
+            {/*<ToggleDarkMode />*/}
 
             <Headerx />
 
